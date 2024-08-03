@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Promptopia: Message Platform for AI Chat
 
-## Getting Started
+Welcome to **Promptopia**, a web application built with Next.js that allows users to create and share messages, which can then be used as prompts for an artificial intelligence (AI) chat. This platform facilitates collaboration and idea exchange, providing users with an effective tool for interacting with AI models.
 
-First, run the development server:
+![Application Screenshot](public/assets/images/readme_cover.png)
 
+## Features
+
+- **Message Creation**: Users can compose messages and save them on the platform.
+- **Message Sharing**: Created messages can be shared with other users to facilitate collaboration and idea exchange.
+- **AI Chat Integration**: Shared messages can be used as prompts for interactions with AI-based chatbots.
+- **Authentication and Authorization**: Utilizes `next/auth` for managing user registration, login, and permissions securely.
+- **Internal APIs**: Implements custom APIs within the project to handle operations related to messages and users.
+
+## Technologies Used
+
+- **Next.js**: React framework that enhances performance and user experience with features like server-side rendering and static site generation.
+- **next/auth**: Solution for user authentication and authorization in Next.js applications.
+- **API Routes**: Internal APIs to manage backend operations directly within the Next.js project.
+- **Database**: Use [name of the database system] for storing messages and user data. (Adjust this based on your implementation.)
+
+## Installation
+
+To install and run **Promptopia** locally, follow these steps:
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/Aranguez/promptopia.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+```bash
+  cd promptopia
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install the dependencies:
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Configure the environment variables by following the instructions in the .env.example file. Create a .env file in the root of the project with the necessary configurations.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Start the development server:
+```bash
+  npm run dev
+```
